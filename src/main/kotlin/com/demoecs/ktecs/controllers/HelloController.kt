@@ -18,11 +18,11 @@ class HelloController {
 
     @GetMapping("/")
     fun helloWorld(): String {
-        return "Hello, this application has been dockerized."
+        return "Hello, this application has been dockerized V2."
     }
 
     @GetMapping("/version")
     fun version(): JsonResponse {
-        return JsonResponse("v1")
+        return JsonResponse("v2")
     }
 }
